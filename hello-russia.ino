@@ -40,7 +40,8 @@ void setup() {
   getPAC();
   sendCommand("AT$IF=868800000", "UL Frequency set: ");
   sendCommand("AT$DR=869100000", "DL Frequency set: ");
-  sendCommand("ATS410=1" ,"Public key: ");
+  //Uncomment the following line to switch to "public key" mode and use your device with a Sigfox Network Emulator
+  //sendCommand("ATS410=1" ,"Public key: ");
   sendCommand("ATS302=15" ,"Set output power to max: ");
   sendCommand("AT$WR", "Save config: ");
   sendCommand("AT$T?", "Get module temperature: ");
